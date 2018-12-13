@@ -6,5 +6,5 @@ DecisionTree works to build a decision tree base on training data.  Then, using 
 
 ## Display:
 
-<img src='' width="400" height="300" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/lxy878/DecisionTree/blob/master/showcase_DecisionTree.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
