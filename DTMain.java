@@ -3,7 +3,6 @@ import java.util.*;
 public class DTMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// parameters: train_feature_fname, train_label_fname, 
 		// 			   test_feature_fname, test_label_fname,
 		//			   max_height(int), max_num_leaves(int)

@@ -54,7 +54,7 @@ public class DecisionTreeClass {
 		// Tree
 		PriorityQueue<DecisionTreeNode> maxHeap = new PriorityQueue<>();
 		maxHeap.add(root);		
-		System.out.println("Continue.....");
+		System.out.println("Root Created .....");
 		
 		while(!maxHeap.isEmpty()){
 			DecisionTreeNode currentNode = maxHeap.poll();
@@ -87,7 +87,6 @@ public class DecisionTreeClass {
 						currentNode.children.add(child);
 						child.parent = currentNode;
 						setNode(child);
-						//System.out.println("improve "+child.opt_improvement+" op feature " + child.opt_fea_id );
 						maxHeap.add(child);
 					}
 				}
@@ -96,7 +95,7 @@ public class DecisionTreeClass {
 			if(getHeight(currentNode)> max_height) break;
 			
 		}
-		System.out.println("Almost There.....");
+		System.out.println("Decision Tree Built.....");
 	}
 
 	public ArrayList<Integer> predict(DataWrapperClass test_data){
@@ -139,7 +138,6 @@ public class DecisionTreeClass {
 			}
 			i++;
 		}
-		System.out.println("Done.");
 		return preLabel;
 	}
 	
@@ -192,7 +190,6 @@ public class DecisionTreeClass {
 							// set the best threshold in the feature
 							bestThreshold = sortFeature.get(i)+0.000001;
 						}
-						//System.out.println("best vote "+ bestVote);
 					}
 					// get the best Accuracy over all feature
 					bestAccur = Math.max(bestAccur, bestVote);
@@ -229,7 +226,6 @@ public class DecisionTreeClass {
 	}
 	// set the majority class and the accuracy from label
 	private void setMajority(DecisionTreeNode node){
-		//System.out.println("new");
 		ArrayList<Integer> listInlabel = new ArrayList<>();
 		for(Integer i : node.data_list){
 			listInlabel.add(train_data.labels.get(i));

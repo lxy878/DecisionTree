@@ -7,8 +7,8 @@ public class DataWrapperClass {
 	public int num_classes;		// number of different classes (K)
 	public int num_cont_fea; 	// number of continuous features
 	public int num_cat_fea;		// number of categorical features
-	public ArrayList<ArrayList<Double> > continuous_features;	// only continuous features
-	public ArrayList<ArrayList<Integer> > categorical_features;	// only categorical features
+	public ArrayList<ArrayList<Double>> continuous_features;	// only continuous features
+	public ArrayList<ArrayList<Integer>> categorical_features;	// only categorical features
 	public ArrayList<Integer> labels;	// labels of all data
 	
 	// read features and labels from input files
@@ -27,7 +27,7 @@ public class DataWrapperClass {
 	}
 	
     private void categorical(String feature_fname, String label_fname){
-        //scan feature
+        //scan features
         try{
         	File file = new File(feature_fname);
             Scanner feature = new Scanner(file);      
@@ -85,9 +85,8 @@ public class DataWrapperClass {
         }
     }
     
-    // testing
     private void continuous(String feature_fname, String label_fname ){
-        //scan feature
+        //scan features
         try{
         	File file = new File(feature_fname);
             Scanner feature = new Scanner(file);      
