@@ -19,5 +19,5 @@ The program is one of the projects for the Data Structure course. The program wa
 
 **Output**: the accurarcy of the correctness on testing data (the best output is 1 as 100%).
 
-<img src='' title='Testing Video' alt='Testing Video' />
+<img src='https://github.com/lxy878/DecisionTree/blob/master/TestingDT.gif' title='Testing Video' alt='Testing Video' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
